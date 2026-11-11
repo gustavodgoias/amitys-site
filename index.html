@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://amityspet.com/">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#174878">
+<meta name="theme-color" content="#6EC1E4">
 <link rel="canonical" href="https://amityspet.com/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%233FA3D9'/%3E%3Cpath d='M16 30q16 18 32 0' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why choose cassava litter instead of clay?", "acceptedAnswer": {"@type": "Answer", "text": "Cassava is a renewable crop: plant-based, biodegradable and gentle on paws. Clay and bentonite are mined minerals that stay in landfills and tend to be dusty."}}, {"@type": "Question", "name": "Which fragrances and sizes are available?", "acceptedAnswer": {"@type": "Answer", "text": "Three fragrances: Fragrance-Free, Lemongrass and Lavender. Three sizes: 4.4 lb (2 kg), 8.8 lb (4 kg) and 13.2 lb (6 kg)."}}, {"@type": "Question", "name": "What are the Natural Flavor Booster toppers?", "acceptedAnswer": {"@type": "Answer", "text": "High-protein meal toppers for dogs made with cassava and Meat, Chicken or Liver. Crunchy, 100% natural, with no artificial preservatives or flavorings, in 0.2 lb (100 g), 0.4 lb (200 g) and 0.8 lb (400 g)."}}, {"@type": "Question", "name": "Can I sell Amitys products under my own brand?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our private label is a full service solution: formula R&D, packaging development and production, with certified quality."}}, {"@type": "Question", "name": "How do I become an authorized distributor?", "acceptedAnswer": {"@type": "Answer", "text": "Get in touch with your regional desk, receive the catalog, samples, price list and container lead times, then launch with our export logistics and marketing support."}}, {"@type": "Question", "name": "Who handles my region?", "acceptedAnswer": {"@type": "Answer", "text": "Ricardo covers the USA & Canada, Guilherme and Luiz cover Latin America & Asia, and Erica covers Brazil."}}]}</script>
@@ -37,7 +37,7 @@
    Brand constants: Bebas Neue + Montserrat, sky #6EC1E4, green #63B22F.
    Kept: rotating starbursts, colour-switching pickers, one giant word as section texture. */
 :root{
-  --cream:#FFFFFF; --cream-2:#F2F7FA; --navy:#174878; --skyam:#5BBCED; --leaf:#A6C84E; --line:#E8E8E8; --ink:#0F2A35; --ink-2:#163B4A;
+  --cream:#FFFFFF; --cream-2:#F2F7FA; --navy:#2B86B6; --amitys:#6EC1E4; --skyam:#5BBCED; --leaf:#A6C84E; --line:#E8E8E8; --ink:#0F2A35; --ink-2:#163B4A;
   --sky:#6EC1E4; --sky-d:#2B86B6; --green:#63B22F; --green-d:#47891C;
   --red:#A9221E; --red-2:#C5302B; --sun:#F2D64B; --lav:#734C91;
   --muted:#5D6B71; --hair:rgba(15,42,53,.14); --accent:#3FA3D9;
@@ -121,16 +121,16 @@ h1,h2{text-wrap:balance}
 .menu-open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
 
 /* HERO: video inside the word, zoom-through on scroll */
-.hero{height:220vh;background:var(--navy)}
+.hero{height:220vh;background:var(--amitys)}
 .hero-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(calc(1.18 - var(--p,0)*.18))}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,44,74,.62) 0%,rgba(14,44,74,.3) 38%,rgba(14,44,74,0) 62%),linear-gradient(180deg,rgba(14,44,74,0) 45%,rgba(14,44,74,.55) 100%);opacity:var(--copy,0)}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,72,108,.62) 0%,rgba(17,72,108,.3) 38%,rgba(17,72,108,0) 62%),linear-gradient(180deg,rgba(17,72,108,0) 45%,rgba(17,72,108,.55) 100%);opacity:var(--copy,0)}
 .hero-mask{position:absolute;inset:0;width:100%;height:100%;overflow:visible;transform-origin:50% 50%;transform:scale(var(--z,1));opacity:var(--mo,1);will-change:transform,opacity;backface-visibility:hidden}
 .hero-mask text{font-family:var(--display);letter-spacing:2px}
 .hero-mask .measure{opacity:0}
 .hero-intro{position:absolute;left:0;right:0;top:calc(50% + var(--wh,320px)/2 + 34px);text-align:center;opacity:calc(1 - var(--p,0)*14);z-index:3}
-.hero-intro p{margin:0 auto;max-width:40ch;font-size:1rem;color:rgba(255,255,255,.72)}
-.cue{display:inline-flex;flex-direction:column;align-items:center;gap:.4rem;margin-top:1.2rem;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.6)}
+.hero-intro p{margin:0 auto;max-width:40ch;font-size:1.05rem;font-weight:600;color:#fff}
+.cue{display:inline-flex;flex-direction:column;align-items:center;gap:.4rem;margin-top:1.2rem;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.92)}
 .cue::after{content:"";width:1px;height:42px;background:#fff;animation:cue 2.2s var(--ease) infinite}
 @keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 .hero-copy{position:absolute;left:0;right:0;bottom:8vh;z-index:3;color:#fff;opacity:var(--copy,0);transform:translateY(calc((1 - var(--copy,0))*40px))}
@@ -249,7 +249,7 @@ h1,h2{text-wrap:balance}
 .expand-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .expand-media{position:absolute;inset:0;clip-path:inset(calc(var(--i,1)*20%) calc(var(--i,1)*30%) calc(var(--i,1)*8%) calc(var(--i,1)*30%) round calc(var(--i,1)*36px));will-change:clip-path}
 .expand-media video{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-.expand-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,44,74,0) 45%,rgba(14,44,74,.6));opacity:calc(1 - var(--i,1))}
+.expand-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,72,108,0) 45%,rgba(17,72,108,.6));opacity:calc(1 - var(--i,1))}
 .expand-cap{position:absolute;left:0;right:0;bottom:9vh;z-index:3;color:#fff;opacity:calc(1 - var(--i,1)*1.6)}
 .expand-cap h2{font-size:var(--t-xl)}
 .expand-cap .row{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
@@ -300,7 +300,7 @@ h1,h2{text-wrap:balance}
 .insta-track::-webkit-scrollbar{display:none}
 .post{position:relative;flex:0 0 clamp(240px,23vw,370px);aspect-ratio:4/5;border-radius:22px;overflow:hidden;scroll-snap-align:start;background:var(--cream-2);text-decoration:none;color:#fff}
 .post img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
-.post::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,44,74,0) 35%,rgba(14,44,74,.78));opacity:0;transition:opacity .4s}
+.post::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,72,108,0) 35%,rgba(17,72,108,.78));opacity:0;transition:opacity .4s}
 .post:hover img,.post:focus-visible img{transform:scale(1.05)}
 .post:hover::after,.post:focus-visible::after{opacity:1}
 .post-cap{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;font-size:.84rem;font-weight:500;line-height:1.4;opacity:0;transform:translateY(10px);transition:opacity .4s,transform .4s var(--ease);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
@@ -311,9 +311,12 @@ h1,h2{text-wrap:balance}
 /* PRIVATE LABEL */
 .pl{padding:96px 0;background:#fff;overflow:hidden}
 .pl .tex span{--tc:rgba(99,178,47,.18)}
+.tex{-webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 50%,#000 72%);mask-image:linear-gradient(90deg,transparent 0,transparent 50%,#000 72%)}
+.pl .tex{-webkit-mask-image:linear-gradient(270deg,transparent 0,transparent 48%,#000 70%);mask-image:linear-gradient(270deg,transparent 0,transparent 48%,#000 70%)}
 .pl-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem;align-items:center}
-.pl-art{position:relative;text-align:center}
-.pl-art img{margin:0 auto;max-height:640px;width:auto}
+.pl-copy{padding:72px 0}
+.pl-art{position:relative;text-align:center;align-self:stretch;min-height:min(100vh,1080px)}
+.pl-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;max-height:none}
 .pl-art .burst{--s:124px;--bb:var(--green);--bc:#fff;right:8%;top:10%}
 .pl h2{font-size:var(--t-l)}
 .pl .sub{font-size:1.06rem;color:var(--muted);margin:1.2rem 0 2.4rem;max-width:44ch}
@@ -340,7 +343,7 @@ h1,h2{text-wrap:balance}
 /* FINAL CTA over video */
 .final{position:relative;min-height:min(92vh,980px);padding:96px 0 80px;display:flex;align-items:center;overflow:hidden;color:#fff;background:var(--navy)}
 .final video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6}
-.final::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,44,74,.85),rgba(14,44,74,.15))}
+.final::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,72,108,.85),rgba(17,72,108,.15))}
 .final .wrap{z-index:3}
 .final h2{font-size:var(--t-xl);max-width:16ch;margin-bottom:1.6rem}
 .final-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center}
@@ -402,6 +405,11 @@ h1,h2{text-wrap:balance}
 .footer nav a{color:rgba(255,255,255,.9)}
 .footer .copy{color:#fff}
 
+/* light accents on the Amitys blue sections */
+.contact .blue,.final .blue{color:#D4F0FF}
+.contact .region{color:#D4F0FF}
+.final-points svg{background:#fff;color:var(--navy)}
+
 /* reading progress */
 .progress{position:fixed;left:0;top:0;width:100%;height:3px;z-index:101;pointer-events:none;background:var(--accent);transform-origin:0 50%;transform:scaleX(var(--sp,0))}
 /* sticky CTA on phones */
@@ -446,7 +454,7 @@ h1,h2{text-wrap:balance}
   .para .tile:nth-child(2){margin-top:70px}
   .para .tile:nth-child(3){margin-top:24px}
   .pack-head{margin-bottom:44px}
-  .pl-art img{max-height:min(640px,70vh)}
+  .pl{padding-top:0!important;padding-bottom:0!important}
   .top-media{max-height:52vh}
   .toppers .features{margin-top:56px}
   .facts{margin-top:70px}
@@ -476,14 +484,16 @@ h1,h2{text-wrap:balance}
   .tex{align-items:flex-start;padding-top:26px}
   .tex span{font-size:21vw}
   .showcase,.pick,.toppers,.pl{padding-top:120px!important}
-  .pl-art{order:2}
-  .pl-art img{max-height:56vh}
+  .pl-art{order:2;min-height:0;height:72vh;margin:0 -20px}
+  .pl{padding-bottom:0!important}
+  .pl-copy{padding:0}
+  .tex,.pl .tex{-webkit-mask-image:none;mask-image:none}
   .final{padding:100px 0 80px;min-height:0}
   .final-grid{grid-template-columns:1fr;gap:2.4rem}
-  .final::after{background:linear-gradient(180deg,rgba(14,44,74,.6),rgba(14,44,74,.9))}
+  .final::after{background:linear-gradient(180deg,rgba(17,72,108,.6),rgba(17,72,108,.9))}
   .m-cta{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:90;transform:translateY(140%);transition:transform .45s var(--ease);visibility:hidden}
   .m-cta.on{transform:none;visibility:visible}
-  .m-cta .btn{width:100%;justify-content:space-between;box-shadow:0 10px 30px -10px rgba(14,44,74,.5)}
+  .m-cta .btn{width:100%;justify-content:space-between;box-shadow:0 10px 30px -10px rgba(17,72,108,.5)}
   .insta{padding:80px 0}
   .insta-head{margin-bottom:32px}
   .show-grid,.vs-grid{grid-template-columns:1fr;gap:2.4rem}
@@ -619,7 +629,7 @@ h1,h2{text-wrap:balance}
           <text x="800" y="625" text-anchor="middle" fill="#000">CASSAVA</text>
         </mask>
       </defs>
-      <rect x="-6000" y="-6000" width="13600" height="12900" fill="#174878" mask="url(#heroMask)"/>
+      <rect x="-6000" y="-6000" width="13600" height="12900" fill="#6EC1E4" mask="url(#heroMask)"/>
       <text class="measure" x="800" y="625" text-anchor="middle">CASSAVA</text>
     </svg>
     <div class="hero-intro"><p>Plant-based pet care, made from Brazilian cassava.</p><span class="cue">Scroll</span></div>
@@ -854,11 +864,11 @@ h1,h2{text-wrap:balance}
 <section class="pl" id="private-label">
   <div class="tex" data-tex aria-hidden="true"><span>Your brand</span></div>
   <div class="wrap pl-grid">
-    <div class="pl-art reveal">
+    <div class="pl-art">
       <img src="assets/pl-pouches.webp" alt="Blue “Your brand here” and orange “Tu marca aquí” stand-up pouches on a green swoosh" width="503" height="1080" loading="lazy">
       <div class="burst" data-burst="16"><span>Your<br>brand</span></div>
     </div>
-    <div class="reveal d1">
+    <div class="pl-copy reveal d1">
       <div class="eh"><span class="eyebrow reveal">Private label</span>
       <h2>Your brand,<br><span class="green">our technology.</span></h2></div>
       <p class="sub">A full service solution: formula, packaging and production, ready for your market.</p>
