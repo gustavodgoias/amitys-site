@@ -836,10 +836,11 @@ h1,h2{text-wrap:balance}
 </section>
 
 <!-- INSTAGRAM GALLERY
-     Auto-update: create a free feed at behold.so connected to @amityspet and paste its JSON feed URL in data-feed.
+     Auto-update: Behold feed "Amitys site gallery" (behold.so, account of marketing D'Goias, source @amityspet). The free plan returns the 6 newest posts;
+     they are shown first and the fixed posts below follow them.
      An Instagram Graph API media URL (…/me/media?fields=media_url,thumbnail_url,permalink,caption,media_type&access_token=…) also works.
      Without a URL (or if the feed fails) the posts below are shown. -->
-<section class="insta" id="instagram" data-feed="" data-user="amityspet" aria-labelledby="insta-title">
+<section class="insta" id="instagram" data-feed="https://feeds.behold.so/FnNHXt41fEJRSizznjn3" data-user="amityspet" aria-labelledby="insta-title">
   <div class="wrap insta-head">
     <div class="eh"><span class="eyebrow reveal">Community</span>
       <h2 class="h-m reveal" id="insta-title">Follow the pack<br><span class="blue">@amityspet</span></h2></div>
@@ -1185,7 +1186,7 @@ h1,h2{text-wrap:balance}
       var posts=Array.isArray(d)?d:(d.posts||d.data||[]); posts=posts.slice(0,18);
       var html=posts.map(function(p){
         var type=p.mediaType||p.media_type||'IMAGE', vid=type==='VIDEO';
-        var img=(p.sizes&&p.sizes.medium&&p.sizes.medium.mediaUrl)||p.thumbnailUrl||p.thumbnail_url||(vid?'':(p.mediaUrl||p.media_url));
+        var img=(vid?(p.thumbnailUrl||p.thumbnail_url):(p.mediaUrl||p.media_url))||(p.sizes&&p.sizes.large&&p.sizes.large.mediaUrl)||''; /* original 4:5 image; Behold sizes are square crops */
         if(!/^https:\/\//.test(img||'')) return '';
         var link=/^https:\/\/(www\.)?instagram\.com\//.test(p.permalink||'')?p.permalink:'https://www.instagram.com/'+user+'/';
         var cap=String(p.prunedCaption||p.caption||'').split('\n')[0].slice(0,140);
@@ -1193,7 +1194,7 @@ h1,h2{text-wrap:balance}
           +(vid?'<svg class="post-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>':'')
           +'<span class="post-cap">'+esc(cap)+'</span><svg class="post-ig" aria-hidden="true"><use href="#i-ig"/></svg></a>';
       }).join('');
-      if(html) track.innerHTML=html;
+      if(html){ track.insertAdjacentHTML('afterbegin',html); track.scrollLeft=0; } /* live posts first, the fixed posts stay after them */
     }).catch(function(){ /* keep the fallback posts */ });
   })();
 
