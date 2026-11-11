@@ -43,7 +43,7 @@
   --muted:#5D6B71; --hair:rgba(15,42,53,.14); --accent:#3FA3D9;
   --display:"Bebas Neue",Impact,"Arial Narrow",sans-serif;
   --text:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --wrap:1400px; --t-xl:clamp(3.2rem,5.4vw,6.2rem); --t-l:clamp(2.8rem,4vw,4.6rem); --t-m:clamp(2.2rem,2.9vw,3.3rem); --t-s:clamp(1.8rem,2.3vw,2.5rem); --ease:cubic-bezier(.2,.7,.2,1);
+  --wrap:1400px; --sec:clamp(64px,7vh,84px); --t-xl:clamp(3.2rem,5.4vw,6.2rem); --t-l:clamp(2.8rem,4vw,4.6rem); --t-m:clamp(2.2rem,2.9vw,3.3rem); --t-s:clamp(1.8rem,2.3vw,2.5rem); --ease:cubic-bezier(.2,.7,.2,1);
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -445,7 +445,7 @@ h1,h2{text-wrap:balance}
 
 /* desktop: each section is one screen (max 1080px tall content) */
 @media (min-width:901px){
-  .screen,.pick,.toppers,.pack,.pl{min-height:min(100vh,1080px);display:flex;flex-direction:column;justify-content:center;padding-top:clamp(56px,7vh,96px);padding-bottom:clamp(56px,7vh,96px)}
+  .screen,.pick,.toppers,.pack,.insta,.partner,.faq,.contact,.manifesto{padding-top:var(--sec);padding-bottom:var(--sec)}
   .wrap,.screen > .wrap,.manifesto > .wrap,.pick > .wrap,.toppers > .wrap,.pack > .wrap,.pl > .wrap,.partner > .wrap,.contact > .wrap{width:min(var(--wrap),100% - 96px)}
   .insta-track{padding-left:max(48px,calc((100% - var(--wrap))/2));padding-right:max(48px,calc((100% - var(--wrap))/2));scroll-padding-inline:max(48px,calc((100% - var(--wrap))/2))}
   .footer-fit{width:min(var(--wrap),100% - 96px)}
